@@ -1,11 +1,13 @@
 import React from 'react';
+import {Container} from "semantic-ui-react";
 
 export default function BasicLayout(props) {
     const { children } = props;
     return (
-        <div>
-            <h1>Basic Layout</h1>
-            {children}
-        </div>
+        <Container fuild className="basic-layout">
+            <Container className="content">
+                {children}
+            </Container>
+        </Container>
     )
 }
